@@ -11,12 +11,16 @@
 		217B2FF0233B7FAB0018AC8B /* Error+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217B2FEF233B7FAB0018AC8B /* Error+Extension.swift */; };
 		217B2FF2233B850A0018AC8B /* ApiClientService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217B2FF1233B850A0018AC8B /* ApiClientService.swift */; };
 		21883CB02339D130001DE690 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21883CAF2339D130001DE690 /* AppDelegate.swift */; };
-		21883CB22339D130001DE690 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21883CB12339D130001DE690 /* ViewController.swift */; };
+		21883CB22339D130001DE690 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21883CB12339D130001DE690 /* WeatherViewController.swift */; };
 		21883CB52339D130001DE690 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21883CB32339D130001DE690 /* Main.storyboard */; };
 		21883CB72339D132001DE690 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21883CB62339D132001DE690 /* Assets.xcassets */; };
 		21883CBA2339D132001DE690 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21883CB82339D132001DE690 /* LaunchScreen.storyboard */; };
 		21883CC62339D49F001DE690 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 21883CC52339D49F001DE690 /* Default-568h@2x.png */; };
 		21883CCA2339D706001DE690 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21883CC92339D706001DE690 /* Weather.swift */; };
+		569F227523412DCE0090F22A /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 569F227423412DCE0090F22A /* WebKit.framework */; };
+		56EA7508233F7F580067D390 /* TabBarControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56EA7507233F7F580067D390 /* TabBarControllerViewController.swift */; };
+		56EA750A233F7FB20067D390 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56EA7509233F7FB20067D390 /* MapViewController.swift */; };
+		56EA750C233FE72C0067D390 /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56EA750B233FE72C0067D390 /* ProgressView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,13 +29,17 @@
 		217B2FF1233B850A0018AC8B /* ApiClientService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClientService.swift; sourceTree = "<group>"; };
 		21883CAC2339D130001DE690 /* Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21883CAF2339D130001DE690 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		21883CB12339D130001DE690 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		21883CB12339D130001DE690 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		21883CB42339D130001DE690 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		21883CB62339D132001DE690 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		21883CB92339D132001DE690 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		21883CBB2339D132001DE690 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		21883CC52339D49F001DE690 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		21883CC92339D706001DE690 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		569F227423412DCE0090F22A /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		56EA7507233F7F580067D390 /* TabBarControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarControllerViewController.swift; sourceTree = "<group>"; };
+		56EA7509233F7FB20067D390 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		56EA750B233FE72C0067D390 /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProgressView.swift; path = Weather/View/ProgressView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				569F227523412DCE0090F22A /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,9 +65,11 @@
 		21883CA32339D130001DE690 = {
 			isa = PBXGroup;
 			children = (
+				56EA750B233FE72C0067D390 /* ProgressView.swift */,
 				21883CC52339D49F001DE690 /* Default-568h@2x.png */,
 				21883CAE2339D130001DE690 /* Weather */,
 				21883CAD2339D130001DE690 /* Products */,
+				569F227323412DCE0090F22A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,7 +106,9 @@
 		21883CC22339D444001DE690 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				21883CB12339D130001DE690 /* ViewController.swift */,
+				21883CB12339D130001DE690 /* WeatherViewController.swift */,
+				56EA7507233F7F580067D390 /* TabBarControllerViewController.swift */,
+				56EA7509233F7FB20067D390 /* MapViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -125,6 +138,14 @@
 				21883CB62339D132001DE690 /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		569F227323412DCE0090F22A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				569F227423412DCE0090F22A /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,12 +220,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21883CB22339D130001DE690 /* ViewController.swift in Sources */,
+				21883CB22339D130001DE690 /* WeatherViewController.swift in Sources */,
 				217B2FED233B7B3A0018AC8B /* Locator.swift in Sources */,
 				21883CCA2339D706001DE690 /* Weather.swift in Sources */,
 				21883CB02339D130001DE690 /* AppDelegate.swift in Sources */,
+				56EA7508233F7F580067D390 /* TabBarControllerViewController.swift in Sources */,
 				217B2FF0233B7FAB0018AC8B /* Error+Extension.swift in Sources */,
 				217B2FF2233B850A0018AC8B /* ApiClientService.swift in Sources */,
+				56EA750A233F7FB20067D390 /* MapViewController.swift in Sources */,
+				56EA750C233FE72C0067D390 /* ProgressView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

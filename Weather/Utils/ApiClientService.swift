@@ -12,8 +12,7 @@ struct ApiClient {
     static let shared = ApiClient()
     private init(){}
     func fetchCurrentWeather(for location: CLLocation, success: @escaping (_ weatherData: Weather?) -> Void, failure: @escaping (_ error: String) -> Void) {
-        //https://samples.openweathermap.org/data/2.5/weather?lat=28.618869364733055&lon=77.37876931152366&appid=b6907d289e10d714a6e88b30761fae22
-        let urlString = "https://samples.openweathermap.org/data/2.5/weather?lat=\(location.coordinate.latitude)&lon=\(location.coordinate.longitude)&appid=\(AppID)"
+        let urlString = "https://api.openweathermap.org/data/2.5/weather?lat=\(location.coordinate.latitude)&lon=\(location.coordinate.longitude)&appid=\(AppID)"
         print("URL: \(urlString)")
         guard let url = URL(string: urlString) else {
             return
@@ -37,6 +36,10 @@ struct ApiClient {
             success(weather)
             
         }.resume()
+    }
+    
+    func weatherMap(for location: CLLocation, success: @escaping (_ weatherData: Weather?) -> Void, failure: @escaping (_ error: String) -> Void) {
+//        https://tile.openweathermap.org/map/{layer}/{z}/{x}/{y}.png?appid={api_key}
     }
 }
 
